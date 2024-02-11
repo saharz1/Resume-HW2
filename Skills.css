@@ -1,0 +1,16 @@
+.card {
+  border: 5px dashed green;
+  border-radius: 10px;
+  background-color: rgb(64 127 127);
+
+  margin: 10px;
+  width: 90%;
+}
+
+.cardImg {
+  max-width: 50%;
+}
+p {
+  color: azure;
+  font-size: larger;
+}

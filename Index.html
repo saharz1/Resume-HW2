@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style.css" />
+    <title>HW2_Resume</title>
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <ul>
+          <li>
+            <a href="./AboutMe.html">About Me</a>
+          </li>
+          <li>
+            <a href="./Skills.html">Skills</a>
+          </li>
+          <li>
+            <a href="./Projects.html">Projects</a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="mobile-nav">
+        <button>Menu</button>
+        <div class="floating-menu">
+          <div class="relative">
+            <button id="close-menu">X</button>
+            <ul>
+              <li>
+                <a href="./AboutMe.html">About Me</a>
+              </li>
+              <li>
+                <a href="./Skills.html">Skills</a>
+              </li>
+              <li>
+                <a href="./Projects.html">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="Section">
+        <div>
+          <h1>Hi, I am Sahar,</h1>
+          <h2>Industrial Engineer to Be</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cum
+            harum culpa? Rerum aliquid quo id totam atque illum temporibus ipsa
+            quibusdam dignissimos sed, quasi delectus culpa sint. Odit, ab.
+          </p>
+          <a href="./CV Sahar Zipori.pdf" download id="CV">Download CV</a>
+        </div>
+        <img src="./Images/NewYorkPic.jpg" alt="Sahar in New York" />
+    </main>
+    <form action class="contact-form" id="contact-form">
+      <input
+        type="text"
+        placeholder="Name"
+        class="contact__input"
+        data-sr-id="5"
+        style="
+          visibility: visible;
+          opacity: 1;
+          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+          transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s,
+            transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+        "
+      />
+      <input
+        type="mail"
+        placeholder="Email"
+        class="contact__input"
+        data-sr-id="6"
+        style="
+          visibility: visible;
+          opacity: 1;
+          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+          transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s,
+            transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+        "
+      />
+      <textarea
+        name=""
+        id="contact-message"
+        cols="0"
+        rows="10"
+        placeholder="Message"
+        class="contact__input"
+        data-sr-id="7"
+        style="
+          visibility: visible;
+          opacity: 1;
+          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+          transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s,
+            transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+        "
+      ></textarea>
+      <input type="button" value="Send" class="contact__button button" />
+    </form>
+    <footer></footer>
+    <script src="./NavBar.js"></script>
+  </body>
+</html>

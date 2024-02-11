@@ -1,0 +1,95 @@
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  gap: 20px;
+  font-size: 20px;
+}
+
+button {
+  background-color: blue;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  #mobile-nav {
+    display: flex;
+  }
+  #desktop-nav ul {
+    display: none;
+  }
+  #mobile-nav ul {
+    display: block;
+    padding: 0;
+  }
+  .floating-menu {
+    position: absolute;
+    width: 80%;
+    box-shadow: 0 0 4px 3px black;
+    border: 1px solid black;
+    top: 0;
+    z-index: 1;
+    background-color: aqua;
+    transform: translateX(-120%);
+    transition: all 1s ease-out;
+  }
+  .close-menu {
+    position: absolute;
+    left: 0;
+  }
+  .relative {
+    position: relative;
+  }
+}
+
+img {
+  max-width: 35%;
+}
+
+.Section {
+  display: flex;
+  background-color: aquamarine;
+}
+
+@media (max-width: 360px) {
+  img {
+    display: none;
+  }
+}
+
+.contact-form {
+  display: Block;
+}
+.contact__input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1.5px solid blue;
+}
+
+#CV {
+  position: relative;
+  text-decoration: none;
+  border: 5px dotted blue;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#CV:hover {
+  background-color: blueviolet;
+}
+
+section div {
+  margin: 10px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
